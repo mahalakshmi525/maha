@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Select a Package</title>
+  </head>
+ <body> 
+  <script>
+   function getvalue(temp){
+      document.getElementById("total").value=temp.value;
+     }
+   function message(t){
+    
+        document.getElementById("tp").value=t.value;
+    }
+ </script>
+      <form name="form1"  onsubmit="return validateForm()" method="post">
+          Select a package:<br/>
+            <label name="select package"></label>
+          <br/><input type="radio" id="onetime" name="select package" value="500" onclick="getvalue(this)"/>one time assessment only (INR 500)
+           
+ 	<br/><input type="radio" id="4 weekly"  name="select package" value="400" onclick="getvalue(this)"/> 4 weekly sessionsweekly      (INR 400/session)          
+        <br/><input type="radio" id=" 12 weekly" name="select package" value="300" onclick="getvalue(this)"/>12 weekly seessions   (INR 300/session)	                             
+        <br/><input type="radio" id="others" name="select package" value="Quote will be shared on phone call" onclick="message(this)"/> others<input type="text" name="others" />
+         <div class="col-sm-4" >
+         <input type="" id="tp" readonly/> 
+         </div>
+       <br/> Quote:<br/>
+          <div class="col-sm-4">	           
+           <br/>INR<input type="text" id="total" readonly/>   paise<input type="text" id="total" readonly/>
+          </div>   
+        </br><br/><input type="submit" value="submit">
+</form>
+ </body>
+</html>
+ 

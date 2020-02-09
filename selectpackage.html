@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body> 
+  <script>
+      function getvalue(temp){
+      document.getElementById("total").value=temp.value;
+      document.getElementById("val").value="0";
+      document.getElementById("msg").value="";
+     
+       }
+       function message(t){
+        document.getElementById("msg").value=t.value;
+        document.getElementById("total").value="";
+        document.getElementById("val").value="";
+       }
+   </script>
+    <section class="container">
+        <hgroup class="row mb-4 mt-4">
+            <aside >
+                <div class="col">
+                    <div class="row">
+                        <form name="form1"  onsubmit="return validateForm()" method="post">
+                    <div class="row">Select a package:</div>
+                    <div class="row">
+                        <label name="select package"></label></div>
+                    <div class="row">
+                        <input type="radio" id="t1" name="select package" value="500" onclick="getvalue(this)"/>one time assessment only(INR 500)
+                    </div>
+                    <div class="row">
+                        <input type="radio" id="t2"  name="select package" value="400" onclick="getvalue(this)"/> 4 weekly sessionsweekly(INR 400/session)
+                    </div>          
+                    <div class="row">
+                        <input type="radio" id="t3" name="select package" value="300" onclick="getvalue(this)"/>12 weekly seessions(INR 300/session)
+                    </div>	                             
+                    <div class="row">
+                        <input type="radio" id="msg1" name="select package" value="Quote will be shared on phn call" onclick="message(this)"/> others<input type="text" id="msg" readonly />
+                    </div>
+                    <div class="row"> Quote:</div> 
+                    </div>        
+                  <div class="col">	           
+                  <div class="row">
+                      INR<input type="text" id="total"  size="1"  readonly/>   paise<input type="text" id="val"  size="1"  readonly/>
+                    </div>
+                  </div><br/>
+                  <div class="col">	 
+                    <div class="row">
+                     <input type="submit" value="submit">
+                    </div>
+              </div>
+              </div>
+              </div>
+           </aside>
+        </hgroup>
+    </section>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+ 

@@ -1,0 +1,12 @@
+ My Associate id : 
+844554
+Other  team members :
+844507 ,  844574 , 844556 , 844583
+Team lead:
+844507
+My Role in team : 
+1.	To develop select package 
+2.	 Applied HTML and Bootstrap  and I  did validations in select package
+My development files:
+1.	Selectpackage.html
+
